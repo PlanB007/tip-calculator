@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Tip Calculator</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/normalize.css">
+  <link rel="stylesheet" href="assets/css/master.css">
+</head>
+<body>
+
+  <div class="wrapper">
+    <div class="header">
+      <h1>Tip Calculator</h1>
+    </div>
+    <div class="container">
+      <span>&euro; <input type="text" name="amount" value="" placeholder="Bill amount"></span>
+      Experience<select class="quality-selector" name="quality">
+        <option value="0">Bad</option>
+        <option value="5">Oke</option>
+        <option value="10">Good</option>
+        <option value="15">Great</option>
+      </select>
+    </div>
+    <div class="footer">
+      <a class="button calculate"
+      title="Calculate tip"
+      href="#"
+      onclick="calculateTip(); return false;">Calculate</a>
+      <span class="total-text">
+        <span class="total-amount-text">Total: &euro; <span class="total-amount"></span></span>
+        <small class="tip-amount-text">Your tip is: &euro; <span class="tip-amount"></span></small>
+      </span>
+    </div>
+  </div>
+
+  <script src="assets/js/script.js" charset="utf-8"></script>
+</body>
+</html>
